@@ -1,0 +1,204 @@
+/* css reset to default */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --font-one:'Roboto', sans-serif;
+    --p-font:'Oxygen', sans-serif;
+    --background:#fff;
+    --color-header-base:#ccc;
+    --color-base:#1010ff;
+    --btn-bckground:#10ff10;
+
+
+}
+/* general settings */
+body{
+    background-color: var(--background);
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+
+/* Typography */
+/* nav */
+nav a{
+    text-decoration: none;
+    color:green;
+    font-size: 2.5rem;
+    padding: 1em;
+
+}
+nav a:hover{
+    background-color: #fff;
+    transition: 1s linear;
+}
+/* hero -section */
+#hero-section{
+    font-family: var(--p-font);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.1em auto;
+    /* padding: 4em; */
+    
+
+}
+.hero-title{
+    font-family: var(--font-one);
+    margin-bottom: 1em;
+    font-size: 3rem;
+}
+p{
+    padding: 0.4em;
+
+}
+
+
+
+
+
+
+header{
+    background-color: var(--color-header-base);
+    
+   
+}
+
+
+header ::after{
+    content: "";
+    /* width: 100%; */
+}
+/* layout */
+/* enroll-section */
+
+
+
+
+.enroll-container{
+    /* display: flex; */
+    /* border: 1px solid yellow; */
+   
+   
+    
+   
+}
+
+.base{
+    background-color: var(--color-header-base);
+    text-align: center;
+    margin-top: 0.2em;
+    
+}
+.pro{
+    background-color:lightblue;
+    text-align: center;
+    margin-top: 0.2em;
+}
+.dollar{
+    text-align: center;
+    margin: 1.em 0;
+    color: lightskyblue;
+    font-size: 5rem !important;
+}
+
+.border{
+    border: 1px solid #ccc;
+    /* text-align: center; */
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: em;
+    margin: 1em auto ;
+    width: 70%;
+    font-size: 2rem;
+    /* height: 80%; */
+
+
+   
+}
+/* button styling */
+
+#enroll-btn{
+    text-align: center;
+    display:block;
+    margin: 1em AUTO;
+    width: 60%;
+    height: 80px;
+    font-size: 3rem;
+    background-color: var(--btn-bckground);
+    border-radius: 10px;
+    text-transform: capitalize;
+
+
+    /* overflow: hidden; */
+}
+
+
+#enroll-btn:hover{
+    background-color: lightblue;
+
+}
+.border ul li{
+    margin: 1em 2em;
+
+}
+.strike-through{
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+/* nav */
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+nav li{
+    list-style-type: none;
+    margin:  1.5em;
+   
+    
+}
+
+
+
+/* media query */
+@media screen and (min-width:600px){
+    .enroll-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: auto;
+        width: 80%;
+    gap: 2em;
+       
+       
+    }
+    h2{
+        width: 100%;
+        margin: 0;
+    }
+   
+    
+    
+
+
+
+}
+
+
+
